@@ -37,7 +37,7 @@ log "Generate requirements.txt with Poetry"
 
 log "Install Poetry"
 
-curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py \
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/d222411ae9d01a04ec8eda348a65aa83852c37d0/get-poetry.py \
     | sed -e 's/allowed_executables = \["python", "python3"\]/allowed_executables = ["python3"]/' \
     | python3 \
     | indent
